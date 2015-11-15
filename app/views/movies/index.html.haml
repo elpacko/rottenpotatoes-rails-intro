@@ -1,10 +1,11 @@
 -#  This file is app/views/movies/index.html.haml
-%h1 All Movies
+%h1 All Movies test
 
 %table#movies
   %thead
     %tr
-      %th Movie Title
+      %th 
+        %li= link_to content_tag(:strong, raw("Movie Title")), pages_team, :title => 'title' 
       %th Rating
       %th Release Date
       %th More Info
